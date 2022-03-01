@@ -1,0 +1,140 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+// ===== VARIABLE CSS =====
+// Header Height
+$header-height: 6rem;
+
+// Color Palette
+$black-color: #212529;
+$grey-color: #495057;
+$white-color: #fff;
+$purple-color: #735dfe;
+
+// Font Body
+$font-body: "Poppins", sans-serif;
+
+// Font Weight
+$font-reguler: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 700;
+
+// Margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// Z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// Transition
+$transition-300: 0.3s;
+$transition-400: 0.4s;
+
+// Line-Height
+$leading-title: 130%;
+$leading-text: 190%;
+
+// ===== BASE & RESET =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  letter-spacing: -1px;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+output,
+input {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.container {
+  max-width: 1120px;
+  width: calc(100% - 3rem);
+  margin: 0 $margin-1-5;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 6rem 0 4rem;
+
+  &-subtitle {
+    display: block;
+    font-size: 17px;
+    font-weight: $font-semibold;
+    color: $purple-color;
+    margin-bottom: 10px;
+  }
+
+  &-title {
+    font-size: 28px;
+    font-weight: $font-bold;
+    color: $black-color;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 15px;
+  font-weight: $font-semibold;
+  border-radius: 15px;
+  transition: $transition-400;
+
+  &-fill {
+    background-color: $purple-color;
+    color: $white-color;
+
+    &:hover {
+      background-color: #412bce;
+    }
+  }
+
+  &-border {
+    border: 2px solid $purple-color;
+    color: $purple-color;
+
+    &:hover {
+      background-color: $purple-color;
+      color: $white-color;
+    }
+  }
+}
