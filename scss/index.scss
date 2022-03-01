@@ -342,3 +342,29 @@ img {
     }
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: $margin-1;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: inline-flex;
+  }
+}
