@@ -93,11 +93,11 @@ img {
 }
 
 .section {
-  padding: 6rem 0 4rem;
+  padding: 6rem 0;
 
   &-subtitle {
     display: block;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: $font-semibold;
     color: $purple-color;
     margin-bottom: 10px;
@@ -228,5 +228,79 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  padding: 8rem 0 6rem;
+
+  &__container {
+    gap: 3rem;
+  }
+
+  &__content {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: $font-bold;
+    color: $black-color;
+    line-height: $leading-title;
+    margin-bottom: $margin-1;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    &-learn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: $font-semibold;
+      color: $black-color;
+    }
+
+    &-icon {
+      font-size: 2.5rem;
+      color: $purple-color;
+    }
+  }
+
+  &__sponsored {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+
+    &-title {
+      font-size: 20px;
+      color: $black-color;
+    }
+
+    &-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-self: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      width: 100px;
+    }
   }
 }
