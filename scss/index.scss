@@ -577,3 +577,27 @@ img {
     }
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 3rem;
+  display: inline-flex;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: rgba($color: #412bce, $alpha: 0.7);
+  border-radius: 10px;
+  color: $white-color;
+  opacity: 0;
+  transition: $transition-400;
+
+  &:hover {
+    background-color: rgba($color: #412bce, $alpha: 1);
+  }
+
+  // Scrollup Action
+  &.scroll-action {
+    opacity: 1;
+  }
+}
