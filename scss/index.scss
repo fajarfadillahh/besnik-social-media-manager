@@ -591,6 +591,7 @@ img {
   color: $white-color;
   opacity: 0;
   transition: $transition-400;
+  z-index: $z-fixed;
 
   &:hover {
     background-color: rgba($color: #412bce, $alpha: 1);
