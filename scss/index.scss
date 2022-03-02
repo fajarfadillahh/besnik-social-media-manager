@@ -139,6 +139,10 @@ img {
   }
 }
 
+.main {
+  overflow: hidden;
+}
+
 // ===== HEADER SECTION =====
 .header {
   position: fixed;
@@ -366,5 +370,90 @@ img {
 
   &__button {
     display: inline-flex;
+  }
+}
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__data {
+    text-align: center;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__item {
+    display: grid;
+    gap: 1.5rem;
+    width: 300px;
+    padding: 3rem 2rem;
+    border: 1.5px solid rgba($color: #000000, $alpha: 0.1);
+    border-radius: 20px;
+    transition: $transition-400;
+
+    &-profile {
+      width: 100px;
+      justify-self: center;
+    }
+
+    &-star {
+      display: inline-flex;
+      justify-self: center;
+      gap: 0.5rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: #ff8831;
+    }
+
+    &-data {
+      text-align: center;
+    }
+
+    &-name {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+
+    // testimonial active
+    &.swiper-slide-active {
+      border-color: $white-color;
+      background-color: $white-color;
+      box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 3rem 0;
+  }
+
+  // Pagination Icon
+  .swiper-pagination {
+    position: initial;
+
+    &-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba($color: #000000, $alpha: 0.1);
+      opacity: 1;
+    }
+
+    &-bullet-active {
+      width: 2rem;
+      height: 10px;
+      border-radius: 0.5rem;
+      background-color: $purple-color;
+    }
   }
 }
