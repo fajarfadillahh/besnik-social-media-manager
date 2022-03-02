@@ -11,6 +11,15 @@ function showMenu(menuid, toggleid) {
 }
 showMenu("header-menu", "header-toggle");
 
+// ===== HEADER-LINK ACTIVE =====
+const headerLink = document.querySelectorAll(".header__link");
+function linkAction() {
+  // Active Link
+  headerLink.forEach((e) => e.classList.remove("active-link"));
+  this.classList.add("active-link");
+}
+headerLink.forEach((e) => e.addEventListener("click", linkAction));
+
 // ===== TESTIMONIAL SWIPER =====
 let swiper = new Swiper(".testimonial-container", {
   centeredSlides: true,
