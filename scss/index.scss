@@ -606,11 +606,13 @@ img {
 // ===== MEDIA QUERIES =====
 // ----- Width 480px -----
 @media screen and (min-width: 480px) {
-  .home__container,
-  .feature__container,
-  .about__container,
+  .home__content,
+  .feature__data,
+  .feature__group,
+  .about__data,
   .testimonial__data,
-  .newsletter__container {
+  .newsletter__data,
+  .newsletter__direction {
     width: 380px;
     margin: 0 auto;
   }
@@ -640,11 +642,13 @@ img {
     padding: 5rem 0;
   }
 
-  .home__container,
-  .feature__container,
-  .about__container,
+  .home__content,
+  .feature__data,
+  .feature__group,
+  .about__data,
   .testimonial__data,
-  .newsletter__container {
+  .newsletter__data,
+  .newsletter__direction {
     width: 450px;
   }
 
