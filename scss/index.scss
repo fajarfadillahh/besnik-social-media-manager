@@ -602,3 +602,17 @@ img {
     opacity: 1;
   }
 }
+
+// ===== MEDIA QUERIES =====
+// ----- Width 480px -----
+@media screen and (min-width: 480px) {
+  .home__container,
+  .feature__container,
+  .about__container,
+  .testimonial__container,
+  .testimonial__data,
+  .newsletter__container {
+    width: 380px;
+    margin: 0 auto;
+  }
+}
