@@ -609,10 +609,57 @@ img {
   .home__container,
   .feature__container,
   .about__container,
-  .testimonial__container,
   .testimonial__data,
   .newsletter__container {
     width: 380px;
     margin: 0 auto;
+  }
+}
+
+// ----- Width 640px -----
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .home__container,
+  .feature__container,
+  .about__container {
+    gap: 5rem;
+  }
+
+  .swiper-wrapper {
+    padding: 5rem 0;
+  }
+
+  .home__container,
+  .feature__container,
+  .about__container,
+  .testimonial__data,
+  .newsletter__container {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .home__title {
+    font-size: 52px;
+  }
+
+  .header__link,
+  .home__text,
+  .feature__item-text,
+  .about__text,
+  .testimonial__item-text,
+  .newsletter__text,
+  .footer__text,
+  .footer__item-link,
+  .footer__copy-text,
+  .newsletter__direction-input,
+  .newsletter__direction-input::placeholder {
+    font-size: 16px;
   }
 }
