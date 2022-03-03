@@ -719,7 +719,12 @@ img {
     margin: 0;
   }
 
-  .home__text {
+  .home__title {
+    font-size: 70px;
+  }
+
+  .home__text,
+  .about__text {
     width: 400px;
   }
 
@@ -750,9 +755,14 @@ img {
   }
 
   .about__data {
-    text-align: left;
+    width: auto;
     margin: 0;
+    text-align: left;
     align-self: center;
+  }
+
+  .about__title {
+    font-size: 48px;
   }
 
   .newsletter__direction {
